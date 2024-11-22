@@ -16,8 +16,16 @@
       
       <pines-splitter>
         <div class="bg-gray-100 p-4">Left panel</div>
-        <div class="bg-gray-200 p-3">Right panel</div>
+        <pines-splitter direction="vertical">
+          <div class="bg-gray-200 p-4">Top right panel</div>
+          <div class="bg-gray-300 p-4">Middle right panel</div>
+          <pines-splitter>
+            <div class="bg-gray-400 p-4">Bottom right left panel</div>
+            <div class="bg-gray-500 p-4">Bottom right right panel</div>
+          </pines-splitter>
+        </pines-splitter>
       </pines-splitter>
+
 
     </div>
 
