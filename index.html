@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./alpine.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>[x-cloak]{ display:none }</style>
-    <title>Create Alpine App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      [x-cloak] { display: none }
+      html, body { height: 100%; margin: 0; }
+    </style>
+    <title>Pines Splitter Demo</title>
   </head>
   <body x-data class="h-screen">
+    <div  class="h-full w-full">
+      
+      <pines-splitter>
+        <div class="bg-gray-100 p-4">Left panel</div>
+        <div class="bg-gray-200 p-3">Right panel</div>
+      </pines-splitter>
 
-      <div x-splitter>
-        <div class="bg-gray-100">Left panel</div>
-        <div x-splitter.vertical class="bg-gray-200">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
+    </div>
 
-
-    <script type="module" src="/index.js"></script>
+    <script type="module" src="/components/pines-splitter.js"></script>
   </body>
 </html>
