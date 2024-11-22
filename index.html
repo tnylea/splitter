@@ -8,10 +8,17 @@
     <title>Create Alpine App</title>
   </head>
   <body x-data class="h-screen">
+
       <div x-splitter>
-        <div class="bg-green-200">Left panel</div>
-        <div class="bg-pink-200">Right panel</div>
+        <div class="bg-gray-100">Left panel</div>
+        <div x-splitter.vertical class="bg-gray-200">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
+
+
     <script type="module" src="/index.js"></script>
   </body>
 </html>
